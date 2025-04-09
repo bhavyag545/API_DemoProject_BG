@@ -38,7 +38,7 @@ public class Basics {
 		given().log().all().queryParam("key", "qaclick123").queryParam("place_id", place_id)
 		.when().get("maps/api/place/get/json")
 		.then().log().all().assertThat().statusCode(200).body("address", equalTo("70 winter walk, USA"));
-		
+		System.out.println("test");
 		
 
 	}
